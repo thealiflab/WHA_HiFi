@@ -7,11 +7,13 @@ class StatisticalDataCard extends StatelessWidget {
     required this.data,
     required this.patientNumber,
     required this.label,
+    required this.color,
   }) : super(key: key);
 
   final List<double> data;
   final int patientNumber;
   final String label;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +55,7 @@ class StatisticalDataCard extends StatelessWidget {
                   child: Sparkline(
                     data: data,
                     lineWidth: 5.0,
-                    lineColor: Colors.greenAccent,
+                    lineColor: color,
                   ),
                 ),
               ],

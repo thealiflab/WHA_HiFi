@@ -16,6 +16,7 @@ dependencies:
   chart_sparkline: ^1.0.5
   flutter_svg: ^0.22.0
   pie_chart: ^5.0.0
+  fl_chart: ^0.40.0
 
 
 dev_dependencies:

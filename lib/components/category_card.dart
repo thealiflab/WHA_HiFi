@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wha_hifi_app/constant.dart';
+import 'package:wha_hifi_app/models/analytics_model.dart';
 
 class CategoryCard extends StatelessWidget {
-  const CategoryCard({
+  CategoryCard({
     Key? key,
   }) : super(key: key);
+
+  AnalyticsModel aM1 = AnalyticsModel('assets/svgs/manlove.svg', "Patient", "200");
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +50,7 @@ class CategoryCard extends StatelessWidget {
                     ],
                   ),
                   child: SvgPicture.asset(
-                    'assets/svgs/manlove.svg',
+                    aM1.svgUrl,
                     semanticsLabel: 'Man Love',
                     height: 5,
                     width: 5,
@@ -58,7 +61,7 @@ class CategoryCard extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: Text(
-                  '200\nPatient',
+                  "${aM1.labelNumber}\n${aM1.labelName}",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,

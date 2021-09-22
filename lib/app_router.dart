@@ -8,8 +8,8 @@ class AppRouter {
     switch (routeSettings.name) {
       case "/":
         return MaterialPageRoute(builder: (_) => DashboardScreen());
-      // case "/":
-      //   return MaterialPageRoute(builder: (_) => AnalyticsScreen());
+      case "/analytics":
+        return MaterialPageRoute(builder: (_) => AnalyticsScreen());
       // case "/dashboard":
       //   return MaterialPageRoute(builder: (_) => DashboardScreen());
       default:

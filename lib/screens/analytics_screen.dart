@@ -83,6 +83,7 @@ class AnalyticsScreen extends StatelessWidget {
                           label: "New Patient",
                           data: data,
                           patientNumber: 160,
+                          color: Colors.greenAccent,
                         ),
                         SizedBox(
                           height: 10,
@@ -91,6 +92,7 @@ class AnalyticsScreen extends StatelessWidget {
                           label: "Old Patient",
                           data: data,
                           patientNumber: 40,
+                          color: Colors.greenAccent,
                         ),
                       ],
                     ),
